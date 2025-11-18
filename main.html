@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />   
+        <title>Cryclicker</title>       
+        <link rel="stylesheet" href="./css/style.css"/>
+        
+    </head>
+
+    <body class = "scene">
+        <h1 class="game-title">D 'Arte Clicker</h1>
+        <main class="container">
+        <header>
+            <h1 class="phase-name">O Ritual</h1>
+            <div class="stats">
+            <div class="cookies"></div>
+            <div id="cookie-count">0</div>
+            <div class="labelmoedas">Almas</div>
+            <div class="rates"></div>
+            <div id="cps">0</div>
+            <div class="labelcliques">almas por segundo</div>
+            <div class="clickvalue"></div>
+            <div id="per-click">1</div>
+            <div class="labelcpc">almas por clique</div>
+            </div>
+        </header>
+
+
+        <div class="game-area">
+            <button id="cookie-button" class="cookie-btn">🕯️</button>
+            <p id = "bonus"></p>
+
+
+            <div class="store">
+                <h2 id = "loja" >Loja</h2>
+                <hr id = "storebreak">
+                <div id="store-items">
+                    <p>A Sacerdotisa</p>
+                    <p>Bruxa</p>
+                    <p>A Lua</p>
+                    <p>Cartomante Esmeralda</p>
+                    <p>O Mago</p>
+                    <p>Mágico Maior</p>
+                    <p>O Louco</p>
+                    <p>Narizinho, a Palhaça</p>
+                    <p>O Diabo</p>
+                    <p>Alpha</p>
+                    <p>O Hierofante</p>
+                    <p>Grande Mestre</p>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <div class="controls">
+            <div class="progress-container">
+                <div id="phase-progress"></div>
+            </div>
+            <button id="reset" class="small">Reiniciar progresso</button>
+        </div>
+
+        </main>
+    <script src="./java/script.js"></script>
+    </body>
+</html>

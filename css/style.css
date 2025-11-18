@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Witch';
+    src: url('./fonts/witch_2/Witch.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.game-title{
+    text-align:center;
+    font-size:2rem;
+    font-family: Witch, Arial, sans-serif;
+    margin-top:16px;
+    color: #bd3038;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.phase-name{
+    color: #bd3038;
+    font-family: Witch, Arial, sans-serif;
+}
+
+.scene {
+    background-color: #220114;
+}
+
+
+
+:root{
+    --accent: #d97706;
+    --panel:#ffffff;
+    --muted:#666;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 20px
+}
+
+body{
+    font-family:Inter, 
+    system-ui, Arial,  sans-serif;
+    background:var(--bg);
+    margin:0;color:#222
+}
+
+*{
+    box-sizing:border-box
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+.stats{
+    display:flex;
+    gap:16px;
+    align-items:center
+}
+
+/* seleciona todos os divs dentro do div com essa classe */
+.stats > div{
+    background: var(--panel);
+    padding:10px 14px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.06);
+    text-align:center
+}
+
+#cookie-count{
+    font-weight:700;
+    font-size:1.4rem
+}
+
+#cps,#per-click{
+    font-weight:700
+}
+
+.game-area{
+    display:flex;
+    gap:20px;
+    margin-top:18px
+}
+
+
+
+#loja{
+    font-family: Witch, Arial, sans-serif;
+    color: #220114;
+    margin: 0px 0; 
+}
+
+#storebreak{
+    border: 1px solid #220114;
+    margin: 1px 0;
+}
+
+
+
+.cookie-btn{
+    width:300px;
+    height:300px;
+    border-radius:18px;
+    border:0;
+    font-size:4rem; /* reduzindo um pouco o tamanho para o emoji de moeda */
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    cursor:pointer;
+    background-color: #bd3038;
+}
+
+
+
+.store{
+    flex:1;
+    min-width:300px;
+    background:var(--panel);
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    background-color: #ff8087;
+}
+
+
+
+#store-items{
+    background-color: #220114;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    flex-direction:column;
+    cursor: pointer;
+}
+
+.small{
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 0;
+    background: #eee;
+    cursor: pointer;
+}
+
+.controls{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:18px;
+    font-size:0.9rem;
+    color:var(--muted);
+}
+
+.saveinfo{
+    margin-left: 10px;
+}
+
+footer{
+    margin-top: 22px;
+    text-align: center;
+    color: var(--muted);
+}
+
+
+body.phase{
+    --bg:#f6f3ea;
+    --accent:#d97706;
+}
+
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.click-float {
+    position: fixed;
+    pointer-events: none;
+    font-weight: 700;
+    color: var(--accent);
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 700ms ease-out, opacity 700ms ease-out;
+    will-change: transform, opacity;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    font-size: 1rem;
+    z-index: 9999;
+}
