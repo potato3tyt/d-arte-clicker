@@ -23,5 +23,3 @@ botao.addEventListener("click", function() {
         document.getElementById("bonus").textContent = "";
     }
 });
-
-//sim
