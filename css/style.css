@@ -58,16 +58,17 @@ header{
 .stats{
     display:flex;
     gap:16px;
-    align-items:center
+    align-items:center;
 }
 
 /* seleciona todos os divs dentro do div com essa classe */
 .stats > div{
-    background: var(--panel);
+    background: #bd3038;
     padding:10px 14px;
     border-radius:10px;
     box-shadow:0 4px 10px rgba(0,0,0,0.06);
-    text-align:center
+    text-align:center;
+    color: #220114;
 }
 
 #cookie-count{
@@ -96,6 +97,7 @@ header{
 #storebreak{
     border: 1px solid #220114;
     margin: 1px 0;
+    margin-bottom: 7px;
 }
 
 
@@ -109,6 +111,21 @@ header{
     box-shadow:0 12px 30px rgba(0,0,0,0.12);
     cursor:pointer;
     background-color: #bd3038;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.cookie-btn:hover{
+    background: #e34a52;
+    transform: translateY(-10%);
+    transition: all 0.3s ease;
+}
+
+.cookie-btn:active{
+    transform: translateY(4px);
+}
+
+#bonus{
+    color: #bd3038;
 }
 
 
@@ -125,8 +142,9 @@ header{
 
 
 
-#store-items{
+.store-item{
     background-color: #220114;
+    color: #bd3038;
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -135,6 +153,21 @@ header{
     margin-bottom: 8px;
     flex-direction:column;
     cursor: pointer;
+    border: 0px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.store-item:hover{
+    background: #3f0b29;
+    transform: translateY(-10%);
+    transition: all 0.3s ease;
+}
+
+.item-preco {
+    background: #00000066;
+    padding: 4px 8px;
+    border-radius: 6px;
+    position: absolute;
 }
 
 .small{
@@ -181,23 +214,10 @@ body.phase{
     overflow: hidden;
 }
 
-.progress-bar {
+ .phase-progress {
     width: 0%;
     height: 100%;
     background: var(--accent);
     transition: width 0.3s ease;
 }
 
-.click-float {
-    position: fixed;
-    pointer-events: none;
-    font-weight: 700;
-    color: var(--accent);
-    transform: translateY(0);
-    opacity: 1;
-    transition: transform 700ms ease-out, opacity 700ms ease-out;
-    will-change: transform, opacity;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.12);
-    font-size: 1rem;
-    z-index: 9999;
-}
