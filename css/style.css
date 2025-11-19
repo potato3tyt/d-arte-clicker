@@ -116,7 +116,7 @@ header{
 
 .cookie-btn:hover{
     background: #e34a52;
-    transform: translateY(-10%);
+    transform: translateY(3%);
     transition: all 0.3s ease;
 }
 
@@ -163,11 +163,13 @@ header{
     transition: all 0.3s ease;
 }
 
-.item-preco {
-    background: #00000066;
-    padding: 4px 8px;
-    border-radius: 6px;
-    position: absolute;
+.store-item:active{
+    transform: translateY(1px);
+}
+
+.preços{
+    display: flex;
+    
 }
 
 .small{
