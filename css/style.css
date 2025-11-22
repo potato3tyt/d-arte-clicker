@@ -21,6 +21,7 @@
 }
 
 .scene {
+    position: relative;
     background-color: #220114;
 }
 
@@ -128,6 +129,26 @@ header{
     color: #bd3038;
 }
 
+.floating-bonus {
+    position: absolute;
+    pointer-events: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 1.5s ease-out;
+    z-index: 1000;
+}
+
+.floating-bonus.show-and-move {
+    opacity: 1;
+    transform: translateY(-50px); /* Move para cima */
+    transition: opacity 0.5s ease-out, transform 1.5s ease-out;
+}
+
+
 
 
 .store{
@@ -224,4 +245,3 @@ body.phase{
     transition: width 0.3s ease;
     
 }
-
